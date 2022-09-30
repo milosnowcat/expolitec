@@ -11,14 +11,60 @@
     />
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="https://www.rahcode.com/assets/css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.rahcode.com/assets/css/swiper-bundle.min.css"
+    />
 
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="https://www.rahcode.com/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.rahcode.com/assets/css/styles.css"
+    />
 
-    <title>Lorem</title>
+    <title>Expolitec</title>
   </head>
-  <body class="dark-theme">
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="https://www.rahcode.com" class="nav__logo">RAH Code</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                Contactme
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
@@ -50,22 +96,20 @@
 
                   <image
                     class="home__blob-img"
-                    x="12"
-                    y="18"
-                    xlink:href="assets/img/perfil.png"
+                    x="16"
+                    y="8"
+                    xlink:href="perfil.png"
                   />
                 </g>
               </svg>
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Lorem ipsum dolor sit.</h1>
-              <h3 class="home__subtitle">Lorem.</h3>
-              <p class="home__description">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel?
-              </p>
+              <h1 class="home__title">Expolitec</h1>
+              <h3 class="home__subtitle">Proyecto</h3>
+              <p class="home__description">2022B</p>
               <a href="#contact" class="button button--flex">
-                Contact Me
+                Contactme
                 <i class="uil uil-message"></i>
               </a>
             </div>
@@ -84,37 +128,37 @@
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <h2 class="section__title">About</h2>
-        <span class="section__subtitle">Lorem, ipsum.</span>
+        <span class="section__subtitle">Expolitec</span>
 
         <div class="about__container container grid">
-          <img src="assets/img/about.png" alt="" class="about__img" />
-
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            class="button button--flex portfolio__button"
+          >
+            Expolitec
+            <i class="uil uil-play-circle button__icon"></i>
+          </a>
           <div class="about__data">
-            <p class="about__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              vero maxime labore nesciunt natus ipsum saepe?
-            </p>
+            <p class="about__description">Proyecto...</p>
           </div>
         </div>
       </section>
 
-      <!--==================== CONTACT ME ====================-->
+      <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Lorem, ipsum dolor.</span>
+        <h2 class="section__title">Contact</h2>
+        <span class="section__subtitle">Get in touch</span>
         <div class="contact__container container grid">
-            <div>
-          <form action="" class="contact__form grid">
+          <form method="post" action="" class="contact__form grid">
               <div class="contact__content">
                 <label for="" class="contact__labe">Email</label>
                 <input type="email" class="contact__input" />
               </div>
-            </div>
-            <input type="submit" value="Send" class="button button--flex" />
+              <div>
+                <input type="submit" value="Send" class="button button--flex" />
+              </div>
           </form>
-          </div>
         </div>
-    </div>
       </section>
     </main>
 
